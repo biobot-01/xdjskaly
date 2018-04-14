@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="{{ DEFAULT_LANG }}">
+    <head>
+        {% block head %}
+            <meta charset="utf-8" />
+            <meta http-equiv="x-ua-compatible" content="ie=edge" />
+            <title>{% block title %}{{ SITENAME }} | {{ SITESUBTITLE }} | Cape Town{% endblock title %}</title>
+            <meta name="author" content="{{ AUTHOR }}" />
+            <meta name="description" content="" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+            <link rel="manifest" href="site.webmanifest" />
+            <!-- Place favicon.ico in the root directory -->
+            <link rel="shortcut icon" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/favicon.ico" type="image/x-icon" sizes="192x192" />
+            <link rel="icon" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/favicon.ico" type="image/x-icon" sizes="16x16" />
+            <link rel="apple-touch-icon" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/icon.png" type="image/png" />
+
+            <!-- Fonts and Icons -->
+            <link href="https://fonts.googleapis.com/css?family=Tillana" rel="stylesheet" />
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+            <!-- CSS Files -->
+            <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/normalize.css" />
+            <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/w3.css" />
+            <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/main.css" />
+
+            <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <![endif]-->
+        {% endblock head %}
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        {% include "includes/header.html" %}
+
+        {% block content%}
+        {% endblock %}
+
+        {% include "includes/footer.html" %}
+
+        <!-- Scripts -->
+        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/plugins.js"></script>
+        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/main.js"></script>
+
+        <!-- Google Analytics -->
+        {% include "includes/analytics.html" %}
+    </body>
+</html>

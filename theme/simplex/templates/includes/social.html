@@ -1,0 +1,18 @@
+<div>
+    <h4>{{ SOCIAL_WIDGET_NAME | default('Social') }}</h4>
+    <ul>
+        {% for name, link in SOCIAL %}
+            <li>
+                <a href="{{ link }}">
+                    <span>
+                        {% if name|lower == 'email' %}
+                            <i class="far fa-envelope"></i> {{ name }}
+                        {% else %}
+                            <i class="fab fa-{{ name|lower }}"></i> {{ name }}
+                        {% endif %}
+                    </span>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

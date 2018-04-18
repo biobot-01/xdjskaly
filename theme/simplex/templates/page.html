@@ -1,9 +1,12 @@
 {% extends "base.html" %}
-{% set active_page = page.show_as_selected|default(page.slug)%}
+{% set active_page = page.show_as_selected %}
 
 {% block title %}
     {{ SITENAME }} | {{ page.title }}
-{% endblock %}
+{% endblock title %}
+{% block description %}
+    {{ page.description }}
+{% endblock description %}
 
 {% block content %}
     {% import 'translations.html' as translations with context %}
@@ -11,9 +14,7 @@
 
     <main>
         <article>
-            <section>
-                {{ page.content }}
-            </section>
+            {{ page.content }}
         </article>
     </main>
 

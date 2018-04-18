@@ -165,6 +165,37 @@ form {
     height: 100px;
 }
 
+/* Social links */
+.fa-soundcloud,
+.soundcloud:hover {
+    color: #ff9800;
+}
+
+.fa-facebook,
+.facebook:hover {
+    color: #2196F3;
+}
+
+.fa-twitter,
+.twitter:hover {
+    color: #00ffff;
+}
+
+.fa-instagram,
+.instagram:hover {
+    color: #9c27b0;
+}
+
+.fa-youtube,
+.youtube:hover {
+    color: #f44336;
+}
+
+.fa-envelope,
+.email:hover {
+    color: #ffc107;
+}
+
 /* Scroll up button */
 #scrollup {
     bottom: 40px!important;

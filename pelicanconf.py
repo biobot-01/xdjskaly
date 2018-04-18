@@ -16,8 +16,20 @@ THEME = 'theme/simplex'
 OUTPUT_PATH = 'output/'
 THEME_STATIC_DIR = 'theme/simplex'
 STATIC_EXCLUDES = ['pages']
-THEME_STATIC_PATHS = ['static', 'extra']
+THEME_STATIC_PATHS = ['static']
 DIRECT_TEMPLATES = ['index']
+STATIC_PATHS = ['extra']
+EXTRA_PATH_METADATA = {
+    'extra/.htaccess': {'path': '.htaccess'},
+    'extra/browserconfig.xml': {'path': 'browserconfig.xml'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/humans.txt': {'path': 'humans.txt'},
+    'extra/icon.png': {'path': 'icon.png'},
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/site.webmanifest': {'path': 'site.webmanifest'},
+    'extra/tile-wide.png': {'path': 'tile-wide.png'},
+    'extra/tile.png': {'path': 'tile.png'}
+}
 
 TIMEZONE = 'Africa/Harare'
 LOCALE = ('en_ZA', 'C')

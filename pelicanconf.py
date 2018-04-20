@@ -17,7 +17,7 @@ OUTPUT_PATH = 'output/'
 THEME_STATIC_DIR = 'theme/simplex'
 STATIC_EXCLUDES = ['pages']
 THEME_STATIC_PATHS = ['static']
-DIRECT_TEMPLATES = ['index']
+DIRECT_TEMPLATES = []
 STATIC_PATHS = ['extra']
 EXTRA_PATH_METADATA = {
     'extra/.htaccess': {'path': '.htaccess'},
